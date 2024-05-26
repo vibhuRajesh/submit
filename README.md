@@ -2,20 +2,45 @@
 
 The model used was the Faster R CNN: and it depends on the following libraries:
 
-os
-torch
-torch.utils.data: DataLoader
-torchvision.datasets: CocoDetection
-torchvision
-torchvision: transforms
-torchvision.models.detection
-torchvision.models.detection.faster_rcnn: FasterRCNN
-transforms: PILToTensor, Compose, FixedSizeCrop
-presets: DetectionPresetTrain
-presets: DetectionPresetEval
-utils: collate_fn
-coco_utils: get_coco
-torchvision.models.detection.rpn: AnchorGenerator
+os,
+
+torch,
+
+torch.utils.data: DataLoader,
+
+torchvision.datasets: CocoDetection,
+
+
+torchvision,
+
+
+torchvision: transforms,
+
+
+torchvision.models.detection,
+
+
+torchvision.models.detection.faster_rcnn: FasterRCNN,
+
+
+transforms: PILToTensor, Compose, FixedSizeCrop,
+
+
+presets: DetectionPresetTrain,
+
+
+presets: DetectionPresetEval,
+
+
+utils: collate_fn,
+
+
+coco_utils: get_coco,
+
+
+torchvision.models.detection.rpn: AnchorGenerator,
+
+
 engine: train_one_epoch,evaluate
  
 
